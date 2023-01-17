@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hilariusnahak</title>
     <!-- Link TailwindCSS Start -->
+    <link rel="stylesheet" href="src/css/input.css" />
     <link rel="stylesheet" href="public/css/style.css" />
     <!-- Link TailwindCSS End -->
 
@@ -79,10 +80,10 @@
       sizes="16x16"
       href="public/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="public/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#f1f1f1" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#f1f1f1" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Favicon End -->
   </head>
   <body>
@@ -162,6 +163,23 @@
                   >
                     Contact
                   </a>
+                </li>
+
+                <li class="mt-3 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -527,7 +545,7 @@
               target="_blank"
             >
               <!-- img format svg -->
-              <img src="./img/clients/Google_2015_logo.svg" alt="Google" />
+              <img src="public/img/clients/Google_2015_logo.svg" alt="Google" />
             </a>
             <a
               href="https://www.freecodecamp.org/"
@@ -999,6 +1017,17 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="hidden fixed justify-center items-center bottom-4 right-4 p-4 z-[9999] h-14 w-14 rounded-full bg-primary hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!-- Back to top End -->
+
     <!-- JS Start-->
     <script src="public/js/app.js"></script>
     <!-- JS End -->
